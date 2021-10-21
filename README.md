@@ -23,13 +23,20 @@ Post MVP
 - Use Of Material U/I and or Bootstrap
 - Use of Axios PUT and Delete
 
+
+
 Time Line:
-* Bullet list
-10/22/2021 Approval
-10/23/2021 Get Requests, File structure, Heiraracy established
-10/24/2021 Plan and implement drop down menus
-10/25/2021 Guitarist page functional, decide on how and where to Axios Post 
-10/26/2021 Guitar Wars page functional
-10/27/2021 CSS and Debug
-10/28/2021 CSS and Debug
-10/29/2021 Presentation
+- 10/22/2021 Approval
+- 10/23/2021 Get Requests, File structure, Heiraracy established
+- 10/24/2021 Plan and implement drop down menus
+- 10/25/2021 Guitarist page functional, decide on how and where to Axios Post 
+- 10/26/2021 Guitar Wars page functional
+- 10/27/2021 CSS and Debug- 
+- 10/28/2021 CSS and Debug
+- 10/29/2021 Presentation
+
+SWOT
+- Strengths    - ?
+- Weaknesses   - Too many to list
+- Oppurtunties - To consolidate my understanding of the concepts I've been bombarded with the last two weeksand finally learn something.
+- Threats      - I know this will be harder and more challenging than I realize
