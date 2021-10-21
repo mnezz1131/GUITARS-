@@ -24,6 +24,7 @@ Post MVP
 - Use of Axios PUT and Delete
 
 Time Line:
+* Bullet list
 10/22/2021 Approval
 10/23/2021 Get Requests, File structure, Heiraracy established
 10/24/2021 Plan and implement drop down menus
