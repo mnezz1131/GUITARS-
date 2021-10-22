@@ -1,9 +1,13 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
+import { Link, Route } from "react-router-dom";
+import GuitarPage from "../GuitarPage/GuitarPage";
 
-const Guitarist = () => {
+
+
+const Main = () => {
   // setting state variables to hold data coming from air table
-  const [guitarists, setGuitarists] = useState([]);
+  const [gtrPlayers, setGtrPlayers] = useState([]);
 
   // setting use effect to make axios call and store data
   useEffect(() => {
@@ -12,21 +16,30 @@ const Guitarist = () => {
       const resp = await axios.get("https://api.airtable.com/v0/app69ZErQlRDvLFux/Table%201?api_key=key4oMm9k9ZdBAjAJ")
       // console.log(resp.data)
       // updating gtrData state
-      setGuitarists(resp.data.records)
+      setGtrPlayers(resp.data.records)
     }
     gtrData();
 }, [])
 
   return (
     <div>
-      <h1>Guitarist Page</h1>
-      {guitarists.map((guitarist) => (
-        <div key={guitarist.id}>
-          <h2 key={guitarist.id}> Guitarist : {guitarist.fields.names}</h2>
-          <img alt={guitarist.fields.name} src={guitarist.fields.small} />
-          <h2>Rank : {guitarist.fields.rank}</h2>
+      <h1>Main Page</h1>
+      {gtrPlayers.map((gtrPlayer) => (
+        <div key={gtrPlayer.id}>
+        <Link to ={`/guitarists/${gtrPlayer.id}`}>
+         <h2> Guitarist : {gtrPlayer.fields.names}</h2></Link>
+      
+          <img alt={gtrPlayer.fields.name} src={gtrPlayer.fields.small} />
+          <h2>Rank : {gtrPlayer.fields.rank}</h2>
         </div>
       ))}
+
+
+<Route path = '/guitarists/:id'>
+        <GuitarPage
+          gtrPlayers={gtrPlayers}
+        />
+</Route>
       </div>
 )
 
@@ -34,6 +47,6 @@ const Guitarist = () => {
 
 }
 
-export default Guitarist
+export default Main
 
 // GET https://api.airtable.com/v0/app69ZErQlRDvLFux/Table%201?api_key=key4oMm9k9ZdBAjAJ
