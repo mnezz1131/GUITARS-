@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# GUITARS!
+TITLE : GREATEST 50 GUITARISTS OF ALL TIME
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description: Guitarists always debate, who is the best. the most influential, the greatest guitarist of all time??  This app will help answer those raging questions by giving a top fifty list.  You can voice your own opinions, create your own list, vote in the one on one Guitar Wars face off!
 
-## Available Scripts
+Wireframe:
+![Screen Shot 2021-10-21 at 4 05 12 PM](https://user-images.githubusercontent.com/57691487/138356601-5dd54cbb-c019-4f78-8ff0-1a826dad42b0.png)
 
-In the project directory, you can run:
+Component Heirarchy:
+![Screen Shot 2021-10-21 at 4 07 22 PM](https://user-images.githubusercontent.com/57691487/138356883-2c811ccd-585e-4c8a-a4d1-871f0ec0fdf1.png)
 
-### `npm start`
+API: Air Table
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+MVP Goals:
+- Fully functioning app using React, React Router, Axios, Material U/I and or Bootstrap
+- Have at least six components
+- Axios GET and POST functionality
+- Use of Flexbox and or Grid 
+- Reponsive Media Queries for Phone and tablet
+- Clean easy to follow code
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Post MVP
+- Use Of Material U/I and or Bootstrap
+- Use of Axios PUT and Delete
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+Time Line:
+- 10/22/2021 Approval
+- 10/23/2021 Get Requests, File structure, Heiraracy established
+- 10/24/2021 Plan and implement drop down menus
+- 10/25/2021 Guitarist page functional, decide on how and where to Axios Post 
+- 10/26/2021 Guitar Wars page functional
+- 10/27/2021 CSS and Debug- 
+- 10/28/2021 CSS and Debug
+- 10/29/2021 Presentation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+SWOT
+- Strengths    - ?
+- Weaknesses   - Too many to list
+- Oppurtunties - To consolidate my understanding of the concepts I've been bombarded with the last two weeksand finally learn something.
+- Threats      - I know this will be harder and more challenging than I realize

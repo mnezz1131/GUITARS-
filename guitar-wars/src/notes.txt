@@ -1,0 +1,66 @@
+Psuedo Code for Main Page
+-Dependencies imported
+
+- Need a component for Banner Image
+- Need a component for Nav Banner
+
+Main Page
+- Will make get request from here so need to define state and usestate
+State: "resp.data" is all I need for first page since nothing else will change at this level?
+useEffect to get the GTR data from Air Table, load data into state, render on page
+
+To Do's
+- Need to figure out how Drop Down works and if what I'm thinking will work
+- Or I could use different buttons to display the Top 10 - Top 25 - Top 50
+- Eventually show Rank *  imageSmall * Guitarist Name
+- Name will link to page with guitarist bio information
+
+
+Guitarist Page
+State:
+- I think I can just use the resp.data for state again.  The change will be all the data thats coming in?  Maybe the Air Table ID?
+ - Will need state for Vote count
+
+Params
+- Rank
+- Gtr
+- Bands
+- Genre
+- Image Large
+- Best Song
+- Best Solo
+- Wiki link
+
+To Do's
+- Will need a button for voting on greatest Guitarist ever
+- Will need logic for counting the votes
+- Will need field in air table to save the count 
+- Will need a PUT to send vote count to database
+- Need to look into cards on Material and Bootstrap to hold results
+
+Guitar Wars
+- Randomly select gutiarist one - dipsplay image and Name
+- Randomly generate guitarist two - display image and Name
+- Buttons for each to capture vote
+- Maybe add a total wins variable to track all the gtr victories
+  Will need another state and field for that in Air Table
+
+
+
+Make your own list page
+Not sure how I would do this, think I will need two different databases
+If so, then GET and display list on left 1/2 of screen 
+-figure out how to do that
+Form on the right half of screen for just the following
+PUT request
+- Rank
+- Gtr
+- Best Song
+- Best Solo
+
+DELETE Button to get rid of the guitarist who are not worthy
+-maybe add a your rank field to air table??
+-PATCH  request ? update that field only
+
+
+
