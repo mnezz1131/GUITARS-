@@ -10,8 +10,8 @@ const Navvie = () => {
 
   return (
     <div>
-   <Container>
-  <Navbar bg="dark" variant="dark" fixed="top">
+   <Container >
+  <Navbar fixed="top" bg="dark" variant="dark" >
     <Container>
     <Navbar.Brand href="#home">Navbar</Navbar.Brand>
     <Nav className="me-auto">

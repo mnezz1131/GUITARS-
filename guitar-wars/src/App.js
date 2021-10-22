@@ -1,6 +1,7 @@
 import Main from "./components/Main/Main"
 import Navvie from "./components/Nav/Navvie"
 import './App.css';
+import Jumbo from "./components/Jumbotron/Jumbo"
 
 
 
@@ -9,7 +10,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-    <Navvie />
+      <Navvie />
+      <Jumbo />
     <Main />
 
     </div>
