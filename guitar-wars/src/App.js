@@ -1,12 +1,13 @@
 
 import './App.css';
+import Main from "./components/Main/Main"
 
-// GET https://api.airtable.com/v0/app69ZErQlRDvLFux/Table%201?api_key=key4oMm9k9ZdBAjAJ
 
 function App() {
   return (
     <div className="App">
-  <h1>Supp Foo</h1>
+    <Main />
+      
     </div>
   );
 }
