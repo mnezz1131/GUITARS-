@@ -64,3 +64,24 @@ DELETE Button to get rid of the guitarist who are not worthy
 
 
 
+{gtrPlayers.map((gtrPlayer) => (
+        <div key={gtrPlayer.id}>
+        <Link to ={`/guitarists/${gtrPlayer.id}`}>
+         <h2> Guitarist : {gtrPlayer.fields.names}</h2></Link>
+          <img alt={gtrPlayer.fields.name} src={gtrPlayer.fields.small} />
+          <h2>ID: {gtrPlayer.id}</h2>
+        </div>
+      ))}
+
+      <Container >
+  <Navbar fixed="top" bg="dark" variant="dark" >
+    <Container>
+    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+    <Nav className="me-auto">
+      <Nav.Link href="#home">Home</Nav.Link>
+      <Nav.Link href="#features">Features</Nav.Link>
+      <Nav.Link href="#pricing">Pricing</Nav.Link>
+    </Nav>
+    </Container>
+  </Navbar>
+      </Container>

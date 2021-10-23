@@ -10,7 +10,8 @@ const GuitarPage = ({ gtrPlayers }) => {
     
 
     <div>
-      <h1>whatever man</h1>
+      <h1>This is my Guitarist Page</h1>
+
     </div>
   )
 

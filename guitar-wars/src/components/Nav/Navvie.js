@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
+import {Link, Route} from "react-router-dom"
+import GuitarWars from '../GuitarWars/GuitarWars.js';
+import Home from "../Home/Home.js"
+import "./nav.css"
 
 
 const Navvie = () => {
@@ -10,19 +10,27 @@ const Navvie = () => {
 
   return (
     <div>
-   <Container >
-  <Navbar fixed="top" bg="dark" variant="dark" >
-    <Container>
-    <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-    <Nav className="me-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-    </Nav>
-    </Container>
-  </Navbar>
-  </Container>
+      <nav className ="nav">
+      <Link to="/" >
+            <img
+              src="http://media-s3-us-east-1.ceros.com/adam-cowie/images/2019/09/04/ae29ac5dfa8bf7db08279b30e0639854/hamburger-icon.svg"
+              alt=""
+            />
+          <h2>Home Page</h2>
+      </Link>
+      
+      <Link to="/guitar-wars" >
+          <h2>Guitar Wars</h2>
+      </Link>
+      
+      <Link to="/add-list" >
+          <h2>Add List</h2>
+      </Link>
+      </nav>
 
+        
+
+     
     </div>
   )
 
