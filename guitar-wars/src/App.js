@@ -1,17 +1,18 @@
-
-import Navvie from "./components/Nav/Navvie.js"
-import Home from "./components/Home/Home.js"
+import GuitarPage from "./components/pages/GuitarPage/GuitarPage.js";
+import Navbar from "./components/Nav/Navbar.js"
+import Home from "./components/pages/Home/Home.js"
+import {Route} from "react-router-dom"
+import GuitarWars from "./components/pages/GuitarWars/GuitarWars.js";
+import AddList from "./components/pages/AddList/AddList.js";
 import './App.css';
 
-import {Link, Route} from "react-router-dom"
-import GuitarWars from "./components/GuitarWars/GuitarWars.js";
-import AddList from "./components/AddList/AddList.js";
+
 
 
 function App() {
   return (
     <div className="App">
-      <Navvie />
+     <Navbar />
 
       <Route path="/" exact>
         <Home />
@@ -23,6 +24,11 @@ function App() {
   
       <Route path="/add-list">
         <AddList />
+      </Route>
+
+      <Route path = "/guitarist-page/:id">
+        <GuitarPage
+        />
       </Route>
     </div>
   );

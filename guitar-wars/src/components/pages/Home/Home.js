@@ -1,13 +1,20 @@
-
+import { Button, ButtonDropdown,  Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
 import axios from "axios"
 import { useEffect, useState } from "react"
 import { Link, Route } from "react-router-dom";
 import GuitarPage from "../GuitarPage/GuitarPage.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Home = () => {
   // setting state variables to hold data coming from air table
   const [gtrPlayers, setGtrPlayers] = useState([]);
 
+  function useButtonState(defaultOpen = false) {
+    const [ isOpen, setOpen ] = useState(defaultOpen);
+    return { isOpen, toggle: () => setOpen(isOpen => !isOpen) };
+  }
+
+  const { isOpen, toggle } = useButtonState();
   // setting use effect to make axios call and store data
   useEffect(() => {
     // console.log("Getting data");
@@ -22,24 +29,41 @@ const Home = () => {
 
   return (
     <div>
+<ButtonDropdown isOpen={isOpen} toggle={toggle}>
+  <DropdownToggle caret>
+        Button Dropdown
+      </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem header>Header</DropdownItem>
+        <DropdownItem disabled>Action</DropdownItem>
+        <DropdownItem>Another Action</DropdownItem>
+        <DropdownItem divider />
+        <DropdownItem>Another Action</DropdownItem>
+      </DropdownMenu>
+    </ButtonDropdown>
+
       <h1>This is my Home Page</h1>
-      {gtrPlayers.map((gtrPlayer) => (
+          {gtrPlayers.map((gtrPlayer) => (
         <div key={gtrPlayer.id}>
-        <Link to ={`/guitarists/${gtrPlayer.id}`}>
+        <Link to ={`/guitarist-page/${gtrPlayer.id}`}>
           <h2> Guitarist : {gtrPlayer.fields.names}</h2></Link>
           <img alt={gtrPlayer.fields.name} src={gtrPlayer.fields.small} />
           <h2>ID: {gtrPlayer.id}</h2>
-        </div>
+        </div>        
       ))}
+          
+      <Route path="/guitarist-page/:id">  
+        <GuitarPage
+          gtrPlayers = {gtrPlayers}
+        />
+      </Route>
+      
+      
         
 
 
-    <Route path = '/guitarists/:id'>
-        <GuitarPage
-          gtrPlayers={gtrPlayers}
-        />
-    </Route>
-      </div>
+  
+    </div>
 )
 }
 
