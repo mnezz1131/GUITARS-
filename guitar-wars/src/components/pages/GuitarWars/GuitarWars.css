@@ -1,0 +1,29 @@
+/* .column1 {
+  float: left;
+  width: 33.33%;
+} */
+
+.column1 {
+ background-color: lemonchiffon;
+  width:46%;
+}
+.column2 {
+ background-color: lightblue;
+  width: 8%;
+}
+.column3 {
+ background-color: lightcoral;
+  width: 46%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row{
+  display: flex;
+  display: row;
+  background-color:lavender;
+  justify-content: center;
+}

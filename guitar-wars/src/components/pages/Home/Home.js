@@ -13,8 +13,8 @@ const Home = () => {
     const [ isOpen, setOpen ] = useState(defaultOpen);
     return { isOpen, toggle: () => setOpen(isOpen => !isOpen) };
   }
-
   const { isOpen, toggle } = useButtonState();
+  
   // setting use effect to make axios call and store data
   useEffect(() => {
     // console.log("Getting data");
@@ -34,11 +34,12 @@ const Home = () => {
         Button Dropdown
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem header>Header</DropdownItem>
-        <DropdownItem disabled>Action</DropdownItem>
-        <DropdownItem>Another Action</DropdownItem>
-        <DropdownItem divider />
-        <DropdownItem>Another Action</DropdownItem>
+     
+        <DropdownItem>Top 5 Guitarists</DropdownItem>
+        <DropdownItem>Top 10 Guitarists</DropdownItem>
+        <DropdownItem>Top 15 Guitarists</DropdownItem>
+ 
+       
       </DropdownMenu>
     </ButtonDropdown>
 
