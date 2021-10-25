@@ -19,7 +19,9 @@ function App() {
       const resp = await axios.get("https://api.airtable.com/v0/app69ZErQlRDvLFux/Table%201?api_key=key4oMm9k9ZdBAjAJ")
       console.log(resp.data)
       // updating gtrData state
-      setGtrPlayers(resp.data.records)
+      const sortedList = resp.data.records.sort((a, b) => a.fields.rank - b.fields.rank)
+setGtrPlayers (sortedList)
+      // setGtrPlayers(resp.data.records)
     }
     gtrData();
 }, [])
@@ -35,7 +37,9 @@ function App() {
       </Route>
 
       <Route path="/guitar-wars">
-        <GuitarWars />
+        <GuitarWars
+          gtrPlayers = {gtrPlayers}
+        />
       </Route>
   
       <Route path="/add-list">

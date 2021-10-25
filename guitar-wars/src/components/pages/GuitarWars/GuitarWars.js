@@ -4,7 +4,7 @@ import "./guitarWars.css"
 
 const GuitarWars = () => {
   const [getGtrPlayers, setGetGtrPlayers] = useState([])
- 
+
 
   useEffect(() => {
     const gtrData = async() => {
@@ -23,21 +23,21 @@ const GuitarWars = () => {
 
   // console.log(pickRandom(getGtrPlayers))
   // console.log(pickRandom(getGtrPlayers))
-  let wins = 0
+  
 
   function handleClick1(ev) {
     ev.preventDefault();
     console.log("Button was clicked")
-    
-    
+
   }
 
   function handleClick2(ev) {
     ev.preventDefault();
     console.log("Button was clicked")
-  
+    
+ 
   }
-  
+
 
   return (
     <div>
@@ -45,14 +45,17 @@ const GuitarWars = () => {
       <h1>This is My Guitar Wars Page </h1>
 
       <div className="row">
-        
+  
         <div className="column1 gtr1">
           <div>
             {<h2>{player1?.fields.names}</h2>}
-            {<img src={player1?.fields.large} alt={player1?.fields.names}/> } 
+            {<h3>ID - {player1?.id}</h3>}
+            {<img src={player1?.fields.large} alt={player1?.fields.names}/> }
+
+
         </div>
         <button onClick={handleClick1}>VOTE</button>
-        <h2>Wins _</h2>  
+       
         </div> 
         
       <div className="column2">
@@ -63,11 +66,14 @@ const GuitarWars = () => {
       <div className="column3 gtr2">
        
         <div>
-           <h2>{player2?.fields.names}</h2>
-           <img src={player2?.fields.large} alt={ player2?.fields.names}/>
+            <h2>{player2?.fields.names}</h2>
+            {<h3>ID - {player2?.id}</h3>}
+            <img src={player2?.fields.large} alt={player2?.fields.names} />
+        
           </div>
           <button onClick={handleClick2}>VOTE</button>
-            <h2>Wins _</h2>  
+        
+           
       </div> 
         
     </div>
