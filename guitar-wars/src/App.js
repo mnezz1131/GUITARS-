@@ -5,17 +5,33 @@ import {Route} from "react-router-dom"
 import GuitarWars from "./components/pages/GuitarWars/GuitarWars.js";
 import AddList from "./components/pages/AddList/AddList.js";
 import './App.css';
-
-
+import { useEffect, useState } from "react"
+import axios from "axios"
 
 
 function App() {
+  const [gtrPlayers, setGtrPlayers] = useState([]);
+
+  // setting use effect to make axios call and store data
+  useEffect(() => {
+    // console.log("Getting data");
+    const gtrData = async () => {
+      const resp = await axios.get("https://api.airtable.com/v0/app69ZErQlRDvLFux/Table%201?api_key=key4oMm9k9ZdBAjAJ")
+      console.log(resp.data)
+      // updating gtrData state
+      setGtrPlayers(resp.data.records)
+    }
+    gtrData();
+}, [])
+
   return (
     <div className="App">
      <Navbar />
 
       <Route path="/" exact>
-        <Home />
+        <Home
+        gtrPlayers = {gtrPlayers}
+        />
       </Route>
 
       <Route path="/guitar-wars">
@@ -28,6 +44,7 @@ function App() {
 
       <Route path = "/guitarist-page/:id">
         <GuitarPage
+            gtrPlayers = {gtrPlayers}
         />
       </Route>
     </div>
