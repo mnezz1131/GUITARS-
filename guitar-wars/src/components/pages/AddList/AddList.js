@@ -46,10 +46,12 @@ const handleSubmit = async (ev) => {
   setToggleFetch(!toggleFetch)
 }
   
-//   const deleteGtr = async () => {
-//     console.log("deleting")
-//     await axios.delete(`https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ&records[]=${playerId}`)
-//  }
+  const deleteGtr = async (playerId) => {
+    console.log("deleting")
+    console.log(playerId)
+    await axios.delete(`https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ&records[]=${playerId}`)
+    setToggleFetch(!toggleFetch)
+ }
   
   return (
     <div className ="addList">
@@ -101,7 +103,7 @@ const handleSubmit = async (ev) => {
             </div>
           {/* <img src={gtrPlayer.fields.small} /> */}
           <div className="column">   <h2>  {gtrPlayer.id}</h2></div>
-          {/* <button onClick={deleteGtr }>Delete</button> */}
+          <button onClick={() => deleteGtr(gtrPlayer.id) }>Delete</button>
    
             </div>
         </div>        
