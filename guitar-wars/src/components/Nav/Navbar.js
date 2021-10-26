@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom"
-import {AppBar, Typography, Toolbar, CssBaseline, Container } from "@material-ui/core"
+
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 import './nav.css';
 
@@ -11,26 +11,24 @@ const Navbar = () => {
     <>
       <nav className="navbar">
      
-      <CssBaseline />
-      <AppBar position="fixed">
-       <Toolbar>
+ 
+      
             <ul>
               
-      <Link to="/" exact >
+      <Link to="/"  >
       <li><MenuSharpIcon /></li>
-          <li><Typography variant= "h5">Home Page</Typography></li>
+          <li>Home Page</li>
       </Link>
       
       <Link to="/guitar-wars" >
-      <li><Typography variant= "h5">Guitar Wars</Typography></li>
+      <li>Guitar Wars</li>
       </Link>
       
       <Link to="/add-list" >
-    <li> <Typography variant= "h5">Add List</Typography></li>
+    <li>Add List</li>
             </Link>
             </ul>     
-      </Toolbar>
-      </AppBar>
+    
     
       </nav>
    </>

@@ -1,32 +1,29 @@
 import { useEffect, useState } from "react"
+// import "./addList.css"
 import axios from "axios"
 
 const AddList = () => {
-
-
   const [gtrPlayers, setGtrPlayers] = useState([]);
-
-  const[names, setNames] = useState ("")
-  const[rank, setRank] = useState ("")
+  const [names, setNames] = useState ("")
+  const [rank, setRank] = useState ("")
   const [solo, setSolo] = useState("")
+  const [toggleFetch, setToggleFetch] = useState(true)
 
-
-  
   // setting use effect to make axios call and store data
   useEffect(() => {
     // console.log("Getting data");
-    const gtrData = async () => {
+      const gtrData = async () => {
       const resp = await axios.get("https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ")
-      // console.log(resp.data)
+      console.log(resp.data.records)
+        
       const playerId = resp.data.records.id
       console.log(playerId)
       const sortedList = resp.data.records.sort((a, b) => (a.fields.rank) - (b.fields.rank))
       setGtrPlayers(sortedList)
-  
       // setGtrPlayers(resp.data.records)
     }
     gtrData();
-}, [])
+}, [toggleFetch])
 
  
   
@@ -42,19 +39,18 @@ const handleSubmit = async (ev) => {
   console.log(newGtr)
  
   await axios.post("https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?key4oMm9k9ZdBAjAJ",
-  { fields: newGtr }, {headers:{Authorization: "Bearer key4oMm9k9ZdBAjAJ" } })
+    { fields: newGtr }, { headers: { Authorization: "Bearer key4oMm9k9ZdBAjAJ" } })
+  setToggleFetch(!toggleFetch)
 }
-  
+
   
 //   const deleteGtr = async () => {
 //     console.log("deleting")
 //     await axios.delete(`https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ&records[]=${playerId}`)
 //  }
   
-  
-
   return (
-    <div>
+    <div className ="addList">
 
 <form onSubmit={handleSubmit}>
         <label htmlFor="names">Guitarist</label>
