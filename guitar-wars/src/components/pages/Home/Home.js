@@ -20,20 +20,20 @@ const Home = ({ gtrPlayers }) => {
   <div className="top">
     <main>
         <CssBaseline />
-        <Button className={classes.button} color="error" variant='contained' onClick = {toggleState}>toggle state</Button>    
+        <Button className={classes.button}  variant='contained' onClick = {toggleState}>toggle state</Button>    
          <Container className={classes.container} maxWidth="sm">
            <Typography variant="h3" align="center" gutterBottom>This is my Home Page
             </Typography >
-            <Typography variant="h7" align="center" color="textSecondary" pararaph>
+           <p>
               Welcome to the Guitar list website where the debate rages over who the best, most influential guitarists of all time are!
-           </Typography >
+              </p>
            </Container>
         
         {showing && <div>
            
           
             <Container className={classes.container}  maxWidth="md">
-            <Grid container spacing={4} justify="center">
+            <Grid container spacing={4} justifyContent="center">
      
             {gtrPlayers.map((gtrPlayer) => (
                 

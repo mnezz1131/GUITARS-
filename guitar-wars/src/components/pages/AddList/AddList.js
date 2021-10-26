@@ -9,7 +9,7 @@ const AddList = () => {
   const[names, setNames] = useState ("")
   const[rank, setRank] = useState ("")
   const [solo, setSolo] = useState("")
- 
+
 
   
   // setting use effect to make axios call and store data

@@ -26,6 +26,11 @@ setGtrPlayers (sortedList)
     gtrData();
 }, [])
 
+ 
+
+
+  
+  
   return (
     <div className="App">
      <Navbar />
@@ -43,7 +48,9 @@ setGtrPlayers (sortedList)
       </Route>
   
       <Route path="/add-list">
-        <AddList />
+        <AddList
+       gtrPlayersList={gtrPlayers}
+        />
       </Route>
 
       <Route path = "/guitarist-page/:id">
