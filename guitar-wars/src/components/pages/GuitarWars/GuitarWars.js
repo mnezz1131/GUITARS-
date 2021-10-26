@@ -4,8 +4,8 @@ import "./guitarWars.css"
 
 const GuitarWars = () => {
   const [getGtrPlayers, setGetGtrPlayers] = useState([])
-const [votes1, setVotes1] = useState(0)
-const [votes2, setVotes2] = useState(0)
+// const [votes1, setVotes1] = useState(0)
+// const [votes2, setVotes2] = useState(0)
 
   useEffect(() => {
     const gtrData = async() => {
@@ -28,14 +28,14 @@ const [votes2, setVotes2] = useState(0)
 
   function handleClick1(ev) {
     ev.preventDefault();
-    setVotes2(votes2 + 1)
+    // setVotes2(votes2 + 1)
 
   }
 
   function handleClick2(ev) {
     ev.preventDefault();
    
-    setVotes2(votes2 + 1)
+    // setVotes2(votes2 + 1)
    
  
   }

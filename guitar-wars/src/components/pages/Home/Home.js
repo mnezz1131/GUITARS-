@@ -2,7 +2,7 @@ import "./Home.css"
 import {  useState } from "react"
 import { Link, } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Typography, CssBaseline, Container, Button, Grid,  Card, CardContent, } from "@material-ui/core"
+import { Typography, CssBaseline, Container, Button, Grid,  } from "@material-ui/core"
 import useStyles from "./styles";
 
 const Home = ({ gtrPlayers }) => {

@@ -4,29 +4,32 @@ import axios from "axios"
 
 const AddList = () => {
   const [gtrPlayers, setGtrPlayers] = useState([]);
-  const [names, setNames] = useState ("")
-  const [rank, setRank] = useState ("")
+  const [names, setNames] = useState("")
+  const [rank, setRank] = useState("")
   const [solo, setSolo] = useState("")
   const [toggleFetch, setToggleFetch] = useState(true)
 
   // setting use effect to make axios call and store data
   useEffect(() => {
     // console.log("Getting data");
-      const gtrData = async () => {
+    const gtrData = async () => {
       const resp = await axios.get("https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ")
       console.log(resp.data.records)
+      console.log(resp.data.records[0].id)
         
-      const playerId = resp.data.records.id
-      console.log(playerId)
       const sortedList = resp.data.records.sort((a, b) => (a.fields.rank) - (b.fields.rank))
+      // const found = sortedList.find(element => element.id === id)
+      // console.log(found)
       setGtrPlayers(sortedList)
+
+
+
       // setGtrPlayers(resp.data.records)
     }
     gtrData();
-}, [toggleFetch])
+  }, [toggleFetch])
 
- 
-  
+
 const handleSubmit = async (ev) => {
   ev.preventDefault()
   console.log("formSubmitted")
@@ -42,7 +45,6 @@ const handleSubmit = async (ev) => {
     { fields: newGtr }, { headers: { Authorization: "Bearer key4oMm9k9ZdBAjAJ" } })
   setToggleFetch(!toggleFetch)
 }
-
   
 //   const deleteGtr = async () => {
 //     console.log("deleting")
@@ -89,7 +91,7 @@ const handleSubmit = async (ev) => {
           <h2> Rank: {gtrPlayer.fields.rank}</h2>
           <h2> Guitarist : {gtrPlayer?.fields?.names}</h2>
           <h2> Solo: {gtrPlayer.fields.solo}</h2>
-          <img src={gtrPlayer.fields.small} />
+          {/* <img src={gtrPlayer.fields.small} /> */}
           <h2>  {gtrPlayer.id}</h2>
           {/* <button onClick={deleteGtr }>Delete</button> */}
           <hr />
