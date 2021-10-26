@@ -54,7 +54,7 @@ const handleSubmit = async (ev) => {
   return (
     <div className ="addList">
 
-<form onSubmit={handleSubmit}>
+<form onSubmit={handleSubmit} >
         <label htmlFor="names">Guitarist</label>
         <input
           type="text"
@@ -87,14 +87,23 @@ const handleSubmit = async (ev) => {
       <h1>This is my Addlist page</h1>
       {gtrPlayers.map((gtrPlayer) => (
         <div key={gtrPlayer.id} className="data">
-      
-          <h2> Rank: {gtrPlayer.fields.rank}</h2>
-          <h2> Guitarist : {gtrPlayer?.fields?.names}</h2>
-          <h2> Solo: {gtrPlayer.fields.solo}</h2>
+      <div className="row">
+            <div className="column">
+              <h2> Rank: {gtrPlayer.fields.rank}</h2>
+            </div>
+            <div className="column">
+              <h2> Guitarist:</h2>
+              <p>{gtrPlayer?.fields?.names}</p>
+            </div>
+            <div className="column">
+              <h2> Solo:</h2>
+              <p>{gtrPlayer?.fields?.solo}</p>
+            </div>
           {/* <img src={gtrPlayer.fields.small} /> */}
-          <h2>  {gtrPlayer.id}</h2>
+          <div className="column">   <h2>  {gtrPlayer.id}</h2></div>
           {/* <button onClick={deleteGtr }>Delete</button> */}
-          <hr />
+   
+            </div>
         </div>        
       ))}
 
