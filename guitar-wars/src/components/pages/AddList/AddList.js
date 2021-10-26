@@ -9,21 +9,26 @@ const AddList = () => {
   const[names, setNames] = useState ("")
   const[rank, setRank] = useState ("")
   const [solo, setSolo] = useState("")
+ 
+
   
   // setting use effect to make axios call and store data
   useEffect(() => {
     // console.log("Getting data");
     const gtrData = async () => {
       const resp = await axios.get("https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ")
-      console.log(resp.data)
-      const sortedList = resp.data.records.sort((a, b) => a.fields.rank - b.fields.rank)
-setGtrPlayers (sortedList)
+      // console.log(resp.data)
+      const playerId = resp.data.records.id
+      console.log(playerId)
+      const sortedList = resp.data.records.sort((a, b) => (a.fields.rank) - (b.fields.rank))
+      setGtrPlayers(sortedList)
+  
       // setGtrPlayers(resp.data.records)
     }
     gtrData();
 }, [])
 
-  const playerId =  gtrPlayers.id
+ 
   
 const handleSubmit = async (ev) => {
   ev.preventDefault()
@@ -41,10 +46,10 @@ const handleSubmit = async (ev) => {
 }
   
   
-  const deleteGtr = async () => {
-    console.log("deleting")
-    await axios.delete(`https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ&records[]=${playerId}`)
- }
+//   const deleteGtr = async () => {
+//     console.log("deleting")
+//     await axios.delete(`https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ&records[]=${playerId}`)
+//  }
   
   
 
@@ -90,7 +95,7 @@ const handleSubmit = async (ev) => {
           <h2> Solo: {gtrPlayer.fields.solo}</h2>
           <img src={gtrPlayer.fields.small} />
           <h2>  {gtrPlayer.id}</h2>
-          <button onClick={deleteGtr }>Delete</button>
+          {/* <button onClick={deleteGtr }>Delete</button> */}
           <hr />
         </div>        
       ))}

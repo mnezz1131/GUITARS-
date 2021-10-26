@@ -1,29 +1,39 @@
 import {Link} from "react-router-dom"
-import "./nav.css"
+import {AppBar, Typography, Toolbar, CssBaseline, Container } from "@material-ui/core"
+import MenuSharpIcon from '@mui/icons-material/MenuSharp';
+import './nav.css';
+
 
 const Navbar = () => {
   
 
   return (
-    <div>
-       <nav className ="nav">
-      <Link to="/" >
-            <img
-              src="http://media-s3-us-east-1.ceros.com/adam-cowie/images/2019/09/04/ae29ac5dfa8bf7db08279b30e0639854/hamburger-icon.svg"
-              alt=""
-            />
-          <h2>Home Page</h2>
+    <>
+      <nav className="navbar">
+     
+      <CssBaseline />
+      <AppBar position="fixed">
+       <Toolbar>
+            <ul>
+              
+      <Link to="/" exact >
+      <li><MenuSharpIcon /></li>
+          <li><Typography variant= "h5">Home Page</Typography></li>
       </Link>
       
       <Link to="/guitar-wars" >
-          <h2>Guitar Wars</h2>
+      <li><Typography variant= "h5">Guitar Wars</Typography></li>
       </Link>
       
       <Link to="/add-list" >
-          <h2>Add List</h2>
-      </Link>
+    <li> <Typography variant= "h5">Add List</Typography></li>
+            </Link>
+            </ul>     
+      </Toolbar>
+      </AppBar>
+    
       </nav>
-   </div>
+   </>
         
 
   
