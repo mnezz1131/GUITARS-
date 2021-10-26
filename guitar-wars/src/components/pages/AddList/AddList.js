@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 // import "./addList.css"
 import axios from "axios"
-
+import "./add.css"
 const AddList = () => {
   const [gtrPlayers, setGtrPlayers] = useState([]);
   const [names, setNames] = useState("")
@@ -86,7 +86,7 @@ const handleSubmit = async (ev) => {
    <hr/> 
       <h1>This is my Addlist page</h1>
       {gtrPlayers.map((gtrPlayer) => (
-        <div key={gtrPlayer.id}>
+        <div key={gtrPlayer.id} className="data">
       
           <h2> Rank: {gtrPlayer.fields.rank}</h2>
           <h2> Guitarist : {gtrPlayer?.fields?.names}</h2>
