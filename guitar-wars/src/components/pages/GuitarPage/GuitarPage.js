@@ -15,7 +15,7 @@ console.log(id)
        <h3>Rank:{gtrPlayer?.fields.rank }</h3>
       <h3>Genre:{gtrPlayer?.fields.genre }</h3>
       <h3>Bands:{gtrPlayer?.fields.bands }</h3>
-      <img alt={gtrPlayer.fields.names } src ={gtrPlayer?.fields.large }/>
+      <img alt={gtrPlayer?.fields.names } src ={gtrPlayer?.fields.large }/>
     
     </div>
   )
