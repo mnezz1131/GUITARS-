@@ -25,26 +25,24 @@ const Home = ({ gtrPlayers }) => {
             </Typography >
            </Container>
         
-        {showing && <div>
+        {showing && <div className="showing">
           
-            <Container className={classes.container}  maxWidth="md">
-            <Grid container spacing={4} justifyContent="center">
+          <Container className={classes.container1}  maxWidth="md">
+            <Grid className={classes.grid1} container spacing={4} justifyContent="center">
      
             {gtrPlayers.map((gtrPlayer) => (
                 
                 <div className="gtrDiv" key={gtrPlayer.id}>
                 <Link to ={`/guitarist-page/${gtrPlayer.id}`}>
-                    <Typography gutterBottom variant="h6">  {gtrPlayer?.fields?.names}</Typography></Link>
+                    <Typography gutterBottom variant="h6">  {gtrPlayer?.fields.names}</Typography></Link>
                     <img alt={gtrPlayer?.fields.names} src={gtrPlayer?.fields.small} />
-                  <Typography gutterBottom variant="h5">Rank: {gtrPlayer.fields.rank}</Typography>
-              
+                  <Typography gutterBottom variant="h5">Rank: {gtrPlayer?.fields.rank}</Typography>
                 </div>        
-   
-   ))}
+                ))}
 
               
-   </Grid>
-           </Container>
+              </Grid>
+          </Container>
     
 
 

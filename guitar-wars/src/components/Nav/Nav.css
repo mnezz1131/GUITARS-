@@ -1,5 +1,5 @@
 .container{
-
+background-color: black;
 position: fixed;
 z-index: 1;
 
@@ -11,4 +11,6 @@ z-index: 1;
 font-size: 25px;
 background-color: rgb(26, 25, 25);
 margin-top: -60px;
+padding: 8px !important;
+margin-left:25px;
 }

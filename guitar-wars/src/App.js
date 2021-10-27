@@ -24,13 +24,7 @@ setGtrPlayers (sortedList)
       // setGtrPlayers(resp.data.records)
     }
     gtrData();
-}, [])
-
-
-  
-
-
-  
+  }, [])
   
   return (
     <div className="App">
