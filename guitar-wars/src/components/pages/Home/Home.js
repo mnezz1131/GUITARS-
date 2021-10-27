@@ -22,11 +22,9 @@ const Home = ({ gtrPlayers }) => {
         <CssBaseline />
         <Button className={classes.button}  variant='contained' onClick = {toggleState}>toggle state</Button>    
          <Container className={classes.container} maxWidth="sm">
-           <Typography variant="h3" align="center" gutterBottom>This is my Home Page
+           <Typography variant="h3" align="center" gutterBottom>Welcome to Guitar Wars!
             </Typography >
-           <p>
-              Welcome to the Guitar list website where the debate rages over who the best, most influential guitarists of all time are!
-              </p>
+       
            </Container>
         
         {showing && <div>

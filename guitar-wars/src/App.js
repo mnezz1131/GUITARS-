@@ -17,7 +17,7 @@ function App() {
     // console.log("Getting data");
     const gtrData = async () => {
       const resp = await axios.get("https://api.airtable.com/v0/app69ZErQlRDvLFux/Table%201?api_key=key4oMm9k9ZdBAjAJ")
-      console.log(resp.data)
+      // console.log(resp.data)
       // updating gtrData state
       const sortedList = resp.data.records.sort((a, b) => a.fields.rank - b.fields.rank)
 setGtrPlayers (sortedList)

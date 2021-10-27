@@ -52,7 +52,7 @@ const GuitarWars = () => {
         
             {<h2>{player1?.fields.names}</h2>}
             {/* {<h3>ID - {player1?.id}</h3>} */}
-            {<img class="image-size" src={player1?.fields.large} alt={player1?.fields.names}/> }
+            {<img className="image-size" src={player1?.fields.large} alt={player1?.fields.names}/> }
             {<h2>Wins from air table - {player1?.fields.wins}</h2>}
 
       
@@ -70,7 +70,7 @@ const GuitarWars = () => {
         
             <h2>{player2?.fields.names}</h2>
             {/* {<h3>ID - {player2?.id}</h3>} */}
-            <img class="image-size"  src={player2?.fields.large} alt={player2?.fields.names} />
+            <img className="image-size"  src={player2?.fields.large} alt={player2?.fields.names} />
             {<h2>Wins from air table - {player2?.fields.wins}</h2>}
    
           <button onClick={handleClick2}>VOTE</button>
