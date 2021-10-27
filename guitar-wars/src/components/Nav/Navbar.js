@@ -20,6 +20,9 @@ const Navigation = () => {
 
         </Link>
       </Nav>
+      {/* <div className="banner-area" >
+        <h1 data-aos="fade-up">Storm Watch Weather</h1>
+      </div> */}
         <Jumbo /> 
       
 {/*       

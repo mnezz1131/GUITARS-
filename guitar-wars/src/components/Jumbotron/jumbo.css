@@ -1,6 +1,6 @@
 .jumbotron{
 box-sizing: border-box;
-
+background-color: black;
 background-image: url(https://i.imgur.com/5Cap1sj.png);
 background-repeat: no-repeat, repeat;
 background-position: center;
@@ -20,7 +20,7 @@ padding: 0px !important;
 
 .containerJumbo{
   display: flex;
-  /* background-color: rgb(219, 21, 21); */
+  background-color: rgb(219, 21, 21);
   margin: 0 auto;
   margin: 0px !important;
  padding: 0;
