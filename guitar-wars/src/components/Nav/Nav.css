@@ -1,5 +1,8 @@
 .container{
-padding-bottom: ;
+
+position: fixed;
+z-index: 1;
+
 }
 
 

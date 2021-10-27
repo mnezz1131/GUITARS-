@@ -14,7 +14,6 @@ const Home = ({ gtrPlayers }) => {
     console.log("i was clicked")
     SetShowing(!showing)
   }
-
   
   return (
   <div className="top">
@@ -24,11 +23,9 @@ const Home = ({ gtrPlayers }) => {
          <Container className={classes.container} maxWidth="sm">
            <Typography variant="h3" align="center" gutterBottom>Welcome to Guitar Wars!
             </Typography >
-       
            </Container>
         
         {showing && <div>
-           
           
             <Container className={classes.container}  maxWidth="md">
             <Grid container spacing={4} justifyContent="center">
@@ -59,4 +56,3 @@ const Home = ({ gtrPlayers }) => {
 
 export default Home;
 
-// GET https://api.airtable.com/v0/app69ZErQlRDvLFux/Table%201?api_key=key4oMm9k9ZdBAjAJ

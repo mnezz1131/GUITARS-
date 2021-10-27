@@ -29,7 +29,7 @@ const Navigation = () => {
 
         
       </Nav>
-          <Jumbo />
+        <Jumbo />
  
 
 

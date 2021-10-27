@@ -10,7 +10,7 @@ const Jumbo = (props) => {
     <div className="container">
 
       <Jumbotron className="jumbotron">
-<h1>Guitar Wars!</h1>
+{/* <h1>Guitar Wars!</h1> */}
       <br/>
       <br/>
       <br/>
