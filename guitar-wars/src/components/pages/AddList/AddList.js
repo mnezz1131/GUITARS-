@@ -88,24 +88,24 @@ const handleSubmit = async (ev) => {
    <hr/> 
       <h1>This is my Addlist page</h1>
       {gtrPlayers.map((gtrPlayer) => (
-        <div key={gtrPlayer.id} className="data">
-      <div className="row">
+  
+      <div className="rowList" key={gtrPlayer.id}>
             <div className="column">
               <h2> Rank: {gtrPlayer.fields.rank}</h2>
             </div>
             <div className="column">
-              <h2> Guitarist:</h2>
-              <p>{gtrPlayer?.fields?.names}</p>
+              <h2>{gtrPlayer?.fields?.names}</h2>
+              {/* <p>{gtrPlayer?.fields?.names}</p> */}
             </div>
             <div className="column">
-              <h2> Solo:</h2>
-              <p>{gtrPlayer?.fields?.solo}</p>
+              <h2> Solo: {gtrPlayer?.fields?.solo}</h2>
+              {/* <p>{gtrPlayer?.fields?.solo}</p> */}
             </div>
           {/* <img src={gtrPlayer.fields.small} /> */}
-          <div className="column">   <h2>  {gtrPlayer.id}</h2></div>
+            <div className="column">
+              <h2>Best Song: {gtrPlayer?.fields.song}</h2></div>
           <button onClick={() => deleteGtr(gtrPlayer.id) }>Delete</button>
    
-            </div>
         </div>        
       ))}
 

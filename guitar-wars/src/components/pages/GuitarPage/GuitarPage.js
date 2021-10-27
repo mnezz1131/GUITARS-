@@ -9,8 +9,8 @@ console.log(id)
   
   return (
     <div className="gtrPage">
-      <div className="rowgtr" >
-      <div className="column">
+      <div className="rowgtr1" >
+      <div className="columngtr">
       <h1>Guitarist Page</h1>
       <h3>Name:{gtrPlayer?.fields.names }</h3>
        <h3>Rank:{gtrPlayer?.fields.rank }</h3>
@@ -18,7 +18,7 @@ console.log(id)
           <h3>Bands:{gtrPlayer?.fields.bands}</h3>
         </div>
         
-        <div className="column">
+        <div className="columngtr2">
           <img alt={gtrPlayer?.fields.names} src={gtrPlayer?.fields.large} />
           </div>
       </div>
