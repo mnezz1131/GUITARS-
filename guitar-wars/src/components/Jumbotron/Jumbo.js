@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import "../images/gtr.png"
 import "./jumbo.css"
 
+
 const Jumbo = (props) => {
 
   return (
@@ -14,7 +15,7 @@ const Jumbo = (props) => {
       <br/>
       <br/>
       <br/>
-      
+
         </Jumbotron>
      
     </div>

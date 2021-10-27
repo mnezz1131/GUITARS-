@@ -10,7 +10,6 @@ const Navigation = () => {
   return (
     <div className="container">
       
-      <Jumbo />
       <Nav className="navbar">
       <Link to="/" exact >
         <NavItem>
@@ -22,16 +21,16 @@ const Navigation = () => {
           <NavLink>Guitar Wars</NavLink>
         </NavItem>
         </Link>
-
         <Link to="/add-list" >
-        <NavItem>
+          <NavItem>
           <NavLink>Add List</NavLink>
         </NavItem>
         </Link>
 
         
       </Nav>
-      <hr />
+          <Jumbo />
+ 
 
 
 

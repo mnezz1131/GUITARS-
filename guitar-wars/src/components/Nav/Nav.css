@@ -1,5 +1,11 @@
+.container{
+padding-bottom: ;
+}
+
+
+
 .navbar{
 font-size: 25px;
-background-color: hotpink;
-
+background-color: rgb(26, 25, 25);
+margin-top: -60px;
 }
