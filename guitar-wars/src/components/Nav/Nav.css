@@ -1,16 +1,29 @@
-.container{
-background-color: black;
-position: fixed;
-z-index: 1;
-
+*{
+  margin:0px;
+  padding: 0px;
 }
 
+.containerNav{
+background-color: rgb(9, 39, 211);
+padding: 0;
 
 
-.navbar{
-font-size: 25px;
-background-color: rgb(26, 25, 25);
-margin-top: -60px;
-padding: 8px !important;
-margin-left:25px;
+
+
 }
+ .navbar{
+
+
+
+padding-left: 25px !important;
+padding-right: 25px!important;
+background-color: rgb(6, 66, 122);
+
+
+}
+.navLi{
+  display: inline-flex;
+  flex-direction: row;
+  font-size: 25px;
+  color:cornsilk
+}  

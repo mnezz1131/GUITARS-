@@ -4,10 +4,10 @@ import "../images/gtr.png"
 import "./jumbo.css"
 
 
-const Jumbo = (props) => {
+const Jumbo = () => {
 
   return (
-    <div className="container">
+    <div className="containerJumbo">
 
       <Jumbotron className="jumbotron">
 {/* <h1>Guitar Wars!</h1> */}

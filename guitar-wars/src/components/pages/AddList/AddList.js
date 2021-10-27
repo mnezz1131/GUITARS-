@@ -86,7 +86,7 @@ const handleSubmit = async (ev) => {
         <input type="submit" value="Create your Own List!"/>
     </form>
    <hr/> 
-      <h1>This is my Addlist page</h1>
+      <h1 className="h1List">Add or Delete Gutiarists</h1>
       {gtrPlayers.map((gtrPlayer) => (
   
       <div className="rowList" key={gtrPlayer.id}>
@@ -104,7 +104,7 @@ const handleSubmit = async (ev) => {
           {/* <img src={gtrPlayer.fields.small} /> */}
             <div className="column">
               <h2>Best Song: {gtrPlayer?.fields.song}</h2></div>
-          <button onClick={() => deleteGtr(gtrPlayer.id) }>Delete</button>
+          <button className="buttonList" onClick={() => deleteGtr(gtrPlayer.id) }>Delete</button>
    
         </div>        
       ))}

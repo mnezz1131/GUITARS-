@@ -8,44 +8,42 @@ import Jumbo from "../Jumbotron/Jumbo";
 
 const Navigation = () => {
   return (
-    <div className="container">
-      
+    <div className="containerNav">
+     
       <Nav className="navbar">
-      <Link to="/" >Home
-        {/* <NavItem>
-          <NavLink>Home</NavLink>
-        </NavItem> */}
+      <Link className="navLi" to="/" >Home
         </Link>
-        <Link to="/guitar-wars" >Guitar Wars
-        {/* <NavItem>
-          <NavLink>Guitar Wars</NavLink>
-        </NavItem> */}
+        <Link className="navLi"  to="/guitar-wars" >Guitar Wars
+       
         </Link> 
-        <Link to="/add-list" >Add List
-          {/* <NavItem>
-          <NavLink>Add List</NavLink>
-        </NavItem> */}
+        <Link className="navLi"  to="/add-list" >Add List
+
         </Link>
-
-        
       </Nav>
-        <Jumbo />
- 
+        <Jumbo /> 
+      
+{/*       
+      <nav>
+      <ul class="menu">
+          <li class="logo">
+          </li>
+          <li class="item">
+          <Link className="navLi" to="/" >Home
+        </Link>
+          </li>
+          <li class="item">
+          <Link className="navLi"  to="/guitar-wars" >Guitar Wars
+       </Link> 
+          </li>
+          <li class="item">
+          <Link className="navLi"  to="/add-list" >Add List
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</Link>
+          </li>
+        
+      
+    </ul>
+</nav> */}
 
     </div>
 

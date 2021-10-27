@@ -28,6 +28,8 @@ setGtrPlayers (sortedList)
   
   return (
     <div className="App">
+    
+
      <Navigation />
 
       <Route path="/" exact>
