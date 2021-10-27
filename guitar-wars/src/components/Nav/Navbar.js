@@ -1,45 +1,64 @@
 import {Link} from "react-router-dom"
-import {AppBar, Typography, Toolbar, CssBaseline, Container } from "@material-ui/core"
+import React, { useState } from 'react';
+import { Jumbotron, Nav, NavItem, NavLink } from 'reactstrap';
 import MenuSharpIcon from '@mui/icons-material/MenuSharp';
 import './nav.css';
+import Jumbo from "../Jumbotron/Jumbo";
 
 
-const Navbar = () => {
-  
-
+const Navigation = () => {
   return (
-    <>
-      <nav className="navbar">
-        <Container>
-      <CssBaseline />
-      <AppBar position="fixed">
-       <Toolbar>
-            <ul>
-              
+    <div className="container">
+      
+      <Jumbo />
+      <Nav className="navbar">
       <Link to="/" exact >
-      <li><MenuSharpIcon /></li>
-          <li><Typography variant= "h5">Home Page</Typography></li>
-      </Link>
-      
-      <Link to="/guitar-wars" >
-      <li><Typography variant= "h5">Guitar Wars</Typography></li>
-      </Link>
-      
-      <Link to="/add-list" >
-    <li> <Typography variant= "h5">Add List</Typography></li>
-            </Link>
-            </ul>     
-      </Toolbar>
-      </AppBar>
-     </Container>
-      </nav>
-   </>
+        <NavItem>
+          <NavLink>Home</NavLink>
+        </NavItem>
+        </Link>
+        <Link to="/guitar-wars" >
+        <NavItem>
+          <NavLink>Guitar Wars</NavLink>
+        </NavItem>
+        </Link>
+
+        <Link to="/add-list" >
+        <NavItem>
+          <NavLink>Add List</NavLink>
+        </NavItem>
+        </Link>
+
         
+      </Nav>
+      <hr />
 
-  
-  )
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    
+
+
+
+
+    
+    
+    
+  )  
 }
-export default Navbar;
+export default Navigation;

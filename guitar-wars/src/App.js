@@ -1,5 +1,5 @@
 import GuitarPage from "./components/pages/GuitarPage/GuitarPage.js";
-import Navbar from "./components/Nav/Navbar.js"
+import Navigation from "./components/Nav/Navbar.js"
 import Home from "./components/pages/Home/Home.js"
 import {Route} from "react-router-dom"
 import GuitarWars from "./components/pages/GuitarWars/GuitarWars.js";
@@ -26,14 +26,15 @@ setGtrPlayers (sortedList)
     gtrData();
 }, [])
 
- 
+
+  
 
 
   
   
   return (
     <div className="App">
-     <Navbar />
+     <Navigation />
 
       <Route path="/" exact>
         <Home

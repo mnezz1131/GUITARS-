@@ -1,0 +1,22 @@
+.jumbotron{
+
+background-image: url(https://i.imgur.com/5Cap1sj.png);
+background-repeat: no-repeat, repeat;
+background-position: center;
+background-size: cover;
+margin-top: -75px;
+padding-top: 100px;
+padding-bottom: 25px;
+font-weight: bold;
+margin-bottom: 1px;
+/* border-radius: 50px; */
+box-shadow: 10px 10px 5px 0 px rgba(0,0,0,0.75);
+
+
+
+}
+
+.jumbotron h1, p{
+color: honeydew;
+padding:50px;
+}
