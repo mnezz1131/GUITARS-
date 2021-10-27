@@ -22,8 +22,6 @@ const AddList = () => {
       // console.log(found)
       setGtrPlayers(sortedList)
 
-
-
       // setGtrPlayers(resp.data.records)
     }
     gtrData();
