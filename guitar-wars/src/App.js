@@ -1,8 +1,8 @@
 import GuitarPage from "./components/GuitarPage/GuitarPage.js";
 import NavBar from "./components/NavBar/NavBar.js"
-import Home from "./components/Home/Home.js.js.js"
+import Home from "./components/Home/Home.js"
 import {Route} from "react-router-dom"
-import GuitarWars from "./components/GuitarWars/GuitarWars.js.js.js";
+import GuitarWars from "./components/GuitarWars/GuitarWars.js";
 import AddList from "./components/AddList/AddList.js";
 import './App.css';
 import { useEffect, useState } from "react"
