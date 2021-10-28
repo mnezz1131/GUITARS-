@@ -24,7 +24,8 @@ MVP Goals:
 Post MVP
 
 - Use Of Material U/I and or Bootstrap
-- Use of Axios PUT and Delete
+- Use of Axios Put and Delete
+- Was not able achieve success in the Guitar Wars component. Ran out of time and am looking to revisit and complete in the near future. Code for that component and link has been commented out.
 
 Time Line:
 
@@ -32,9 +33,9 @@ Time Line:
 - 10/23/2021 Get Requests, File structure, Heiraracy established
 - 10/24/2021 Plan and implement drop down menus
 - 10/25/2021 Guitarist page functional, decide on how and where to Axios Post
-- 10/26/2021 Guitar Wars page functional
-- 10/27/2021 CSS and Debug-
-- 10/28/2021 CSS and Debug
+- 10/26/2021 Guitar Wars was not able to be functional
+- 10/27/2021 CSS and Debug
+- 10/28/2021 Deploy CSS and Debug
 - 10/29/2021 Presentation
 
 SWOT
@@ -43,3 +44,7 @@ SWOT
 - Weaknesses - Inexperience with CSS with React, Bootstrap, Material UI
 - Oppurtunties - Learn from my mistakes this project and apply to the next project.
 - Threats - This was harder and more challenging than I realized.
+
+Link to Deployed Site
+https://hardcore-poitras-b8d1b6.netlify.app/
+
