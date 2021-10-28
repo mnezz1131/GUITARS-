@@ -3,10 +3,10 @@ import {  useState } from "react"
 import { Link, } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Typography, CssBaseline, Container, Button, Grid,  } from "@material-ui/core"
-import UseStyles from "./UseStyles";
+import UseStyles from "./styles";
 
 const Home = ({ gtrPlayers }) => {
-  const classes = useStyles();
+  const classes = UseStyles();
   const [showing, SetShowing] = useState(true)
   //function is going to pass in the flipped boolean
   //going to set showing to whatever showing in not

@@ -1,9 +1,9 @@
-import GuitarPage from "./components/pages/GuitarPage/GuitarPage.js";
-import NavBar from "./components/Nav/NavBar.js"
-import Home from "./components/pages/Home/Home.js"
+import GuitarPage from "./components/Pages/GuitarPage/GuitarPage.js";
+import NavBar from "./components/NavBar/NavBar.js"
+import Home from "./components/Pages/Home/Home.js"
 import {Route} from "react-router-dom"
-import GuitarWars from "./components/pages/GuitarWars/GuitarWars.js";
-import AddList from "./components/pages/AddList/AddList.js";
+import GuitarWars from "./components/Pages/GuitarWars/GuitarWars.js";
+import AddList from "./components/Pages/AddList/AddList.js";
 import './App.css';
 import { useEffect, useState } from "react"
 import axios from "axios"
