@@ -19,7 +19,7 @@ const Home = ({ gtrPlayers }) => {
   <div className="top">
     <main>
         <CssBaseline />
-        <Button className={classes.button}  variant='contained' onClick = {toggleState}>toggle state</Button>    
+        <Button className={classes.button}  variant='contained' onClick = {toggleState}>Hide Guitars</Button>    
          <Container className={classes.container} maxWidth="sm">
            <Typography variant="h3" align="center" gutterBottom>Welcome to Guitar Wars!
             </Typography >
@@ -30,21 +30,18 @@ const Home = ({ gtrPlayers }) => {
           <Container className={classes.container1}  maxWidth="md">
             <Grid className={classes.grid1} container spacing={4} justifyContent="center">
      
-            {gtrPlayers.map((gtrPlayer) => (
+              {gtrPlayers.map((gtrPlayer) => (
                 
                 <div className="gtrDiv" key={gtrPlayer.id}>
-                <Link to ={`/guitarist-page/${gtrPlayer.id}`}>
-                    <h4>  {gtrPlayer?.fields.names}</h4></Link>
-                    <img alt={gtrPlayer?.fields.names} src={gtrPlayer?.fields.small} />
+                  <Link to={`/guitarist-page/${gtrPlayer.id}`}>
+                    <h5>  {gtrPlayer?.fields.names}</h5></Link>
+                  <img alt={gtrPlayer?.fields.names} src={gtrPlayer?.fields.small} />
                   <h5>Rank: {gtrPlayer?.fields.rank}</h5>
-                </div>        
-                ))}
-
-              
+                </div>
+              ))}
               </Grid>
           </Container>
     
-
 
         </div>}
     </main>

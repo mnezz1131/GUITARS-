@@ -13,40 +13,17 @@ const NavBar = () => {
       <Nav className="navbar">
       <Link className="navLi" to="/" >Home
         </Link>
-        <Link className="navLi"  to="/guitar-wars" >Guitar Wars
-       
-        </Link> 
-        <Link className="navLi"  to="/add-list" >Add List
 
+        {/* <Link className="navLi"  to="/guitar-wars" >Guitar Wars
+        </Link> */}
+        
+        <Link className="navLi"  to="/add-list" >Add List
         </Link>
       </Nav>
-      {/* <div className="banner-area" >
-        <h1 data-aos="fade-up">Storm Watch Weather</h1>
-      </div> */}
+      
         <Jumbo /> 
       
-{/*       
-      <nav>
-      <ul class="menu">
-          <li class="logo">
-          </li>
-          <li class="item">
-          <Link className="navLi" to="/" >Home
-        </Link>
-          </li>
-          <li class="item">
-          <Link className="navLi"  to="/guitar-wars" >Guitar Wars
-       </Link> 
-          </li>
-          <li class="item">
-          <Link className="navLi"  to="/add-list" >Add List
 
-</Link>
-          </li>
-        
-      
-    </ul>
-</nav> */}
 
     </div>
 

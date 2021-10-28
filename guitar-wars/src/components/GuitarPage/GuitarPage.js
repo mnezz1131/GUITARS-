@@ -1,10 +1,9 @@
 import { useParams } from "react-router-dom"
 import "./GuitarPage.css"
 
-
 const GuitarPage = ({ gtrPlayers }) => {
   const { id } = useParams();
-console.log(id)
+// console.log(id)
   const gtrPlayer = gtrPlayers.find((element)=> element.id === id)
   
   return (
@@ -13,9 +12,9 @@ console.log(id)
       <div className="columngtr">
       <h1>Guitarist Page</h1>
       <h3>Name:{gtrPlayer?.fields.names }</h3>
-       <h4>Rank: {gtrPlayer?.fields.rank }</h4>
+      <h4>Rank: {gtrPlayer?.fields.rank }</h4>
       <h4>Genre: {gtrPlayer?.fields.genre }</h4>
-          <h5>Bands: {gtrPlayer?.fields.bands}</h5>
+      <h5>Bands: {gtrPlayer?.fields.bands}</h5>
         </div>
         
         <div className="columngtr2">
@@ -25,7 +24,6 @@ console.log(id)
     </div>
   )
   
-
 }
 
 export default GuitarPage;

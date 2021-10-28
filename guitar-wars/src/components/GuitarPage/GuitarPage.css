@@ -6,7 +6,7 @@
 }
 .rowgtr1{
   margin: 0 auto;
-  background-color: rgb(158, 10, 10);
+  background-color: rgb(8, 8, 8);
   width:80%;
 
   display: flex;
@@ -16,7 +16,7 @@
   float: left;
   width: 50%;
   margin-top: 0px;
-  background-color: cyan;
+  background-color: gray;
 }
 
 /* Clear floats after the columns */
@@ -50,16 +50,16 @@ img {
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
   .columngtr{
     width: 70%;
-    background-color: rgb(225, 0, 255);
+    /* background-color: rgb(225, 0, 255); */
 
     float: none;
   width: 50%;
   margin-top: 0px;
-  background-color: cyan;
+  /* background-color: cyan; */
   }
   .columngtr2{
     width: 100%;
-    background-color: rgb(225, 0, 255);
+    /* background-color: rgb(225, 0, 255); */
   }
 h1{
   font-size: 16px !important;
@@ -77,7 +77,7 @@ h5{
   
   background-color: rgb(55, 173, 61);
   width:100%;
-
+padding: 0;
   display: flex;
   flex-direction: row;
 }
