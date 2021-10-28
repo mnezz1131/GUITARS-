@@ -15,7 +15,7 @@ console.log(id)
       <h3>Name:{gtrPlayer?.fields.names }</h3>
        <h4>Rank: {gtrPlayer?.fields.rank }</h4>
       <h4>Genre: {gtrPlayer?.fields.genre }</h4>
-          <h4>Bands: {gtrPlayer?.fields.bands}</h4>
+          <h5>Bands: {gtrPlayer?.fields.bands}</h5>
         </div>
         
         <div className="columngtr2">
