@@ -3,7 +3,7 @@ import {  useState } from "react"
 import { Link, } from "react-router-dom"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Typography, CssBaseline, Container, Button, Grid,  } from "@material-ui/core"
-import useStyles from "./styles";
+import UseStyles from "./UseStyles";
 
 const Home = ({ gtrPlayers }) => {
   const classes = useStyles();
