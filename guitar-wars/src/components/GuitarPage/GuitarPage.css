@@ -1,18 +1,18 @@
-.gtrPage{
+.gtrPage {
   /* margin-top: 365px; */
   background-color: black;
   display: flex;
   flex-direction: row;
 }
-.rowgtr1{
+.rowgtr1 {
   margin: 0 auto;
   background-color: rgb(8, 8, 8);
-  width:80%;
+  width: 80%;
 
   display: flex;
   flex-direction: row;
 }
-.columngtr{
+.columngtr {
   float: left;
   width: 50%;
   margin-top: 0px;
@@ -24,7 +24,6 @@
   content: "";
   display: table;
   clear: both;
- 
 }
 
 img {
@@ -34,57 +33,50 @@ img {
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 3) {
-  .columngtr{
-
+  .columngtr {
     width: 70%;
 
     background-color: rgb(225, 0, 255);
   }
-
 }
-
-
-
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
-  .columngtr{
+  .columngtr {
     width: 70%;
     /* background-color: rgb(225, 0, 255); */
 
     float: none;
-  width: 50%;
-  margin-top: 0px;
-  /* background-color: cyan; */
+    width: 50%;
+    margin-top: 0px;
+    /* background-color: cyan; */
   }
-  .columngtr2{
+  .columngtr2 {
     width: 100%;
     /* background-color: rgb(225, 0, 255); */
   }
-h1{
-  font-size: 16px !important;
-}
-h3{
-  font-size: 16px !important;
-}
-h4{
-  font-size: 16px !important;
-}
-h5{
-  font-size: 12px !important;
-}
-.rowgtr1{
-  
-  background-color: rgb(55, 173, 61);
-  width:100%;
-padding: 0;
-  display: flex;
-  flex-direction: row;
-}
+  h1 {
+    font-size: 16px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  h4 {
+    font-size: 16px !important;
+  }
+  h5 {
+    font-size: 12px !important;
+  }
+  .rowgtr1 {
+    background-color: rgb(55, 173, 61);
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+  }
 
-img {
-  width: 100px;
-  height: auto;
-}
-
+  img {
+    width: 100px;
+    height: auto;
+  }
 }
