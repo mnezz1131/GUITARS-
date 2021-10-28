@@ -1,4 +1,4 @@
-import GuitarPage from "./components/Pages/GuitarPage/GuitarPage.js";
+import GuitarPage from "../components/Pages/GuitarPage/GuitarPage.js";
 import NavBar from "./components/NavBar/NavBar.js"
 import Home from "./components/Pages/Home/Home.js"
 import {Route} from "react-router-dom"
