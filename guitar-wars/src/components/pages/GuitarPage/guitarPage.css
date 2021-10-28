@@ -1,11 +1,16 @@
 .gtrPage{
   /* margin-top: 365px; */
   background-color: black;
+  display: flex;
+  flex-direction: row;
 }
 .rowgtr1{
   margin: 0 auto;
-  background-color: black;
+  background-color: rgb(158, 10, 10);
   width:80%;
+
+  display: flex;
+  flex-direction: row;
 }
 .columngtr{
   float: left;
@@ -19,4 +24,24 @@
   display: table;
   clear: both;
  
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+
+.rowgtr{
+  width: 100% !important;
+}
+
+.columngtr{
+background-color: crimson !important;
+  width: 50%;
+ 
+}
+
 }
