@@ -2,11 +2,11 @@ import {Link} from "react-router-dom"
 // import React, { useState } from 'react'
 import {  Nav } from 'reactstrap';
 // import MenuSharpIcon from '@mui/icons-material/MenuSharp';
-import './nav.css';
-import Jumbo from "../Jumbotron/Jumbo";
+import './NavBar.css';
+import Jumbo from "../Jumbo/Jumbo";
 
 
-const Navigation = () => {
+const NavBar = () => {
   return (
     <div className="containerNav">
      
@@ -61,4 +61,4 @@ const Navigation = () => {
     
   )  
 }
-export default Navigation;
+export default NavBar;

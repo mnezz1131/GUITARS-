@@ -11,34 +11,13 @@ const useStyles = makeStyles((theme) => ({
     // marginTop: theme.spacing (1),
     // marginBottom: '1px',
 
-
- 
-
-
-
-
-
-
   },
-  // button: {
-  //   backgroundColor: theme.palette.warning.main,
-
-  // },
 
   grid1: {
     backgroundColor: "#000",
     // marginTop: theme.spacing (1),
     // marginBottom: '1px',
   },
-
-
-  
-
-
-
-
-
-
   
 }));
 

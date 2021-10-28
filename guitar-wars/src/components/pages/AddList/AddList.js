@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 // import "./addList.css"
 import axios from "axios"
-import "./add.css"
+import "./AddList.css"
 const AddList = () => {
   const [gtrPlayers, setGtrPlayers] = useState([]);
   const [names, setNames] = useState("")
@@ -117,4 +117,3 @@ export default AddList;
 
 
    
-// https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ

@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom"
-import "./guitarPage.css"
+import "./GuitarPage.js"
 
 
 const GuitarPage = ({ gtrPlayers }) => {

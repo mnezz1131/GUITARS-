@@ -1,7 +1,7 @@
 import { Jumbotron } from 'reactstrap';
 // import Container from 'react-bootstrap/Container';
 import "../images/gtr.png"
-import "./jumbo.css"
+import "./Jumbo.css"
 
 
 const Jumbo = () => {

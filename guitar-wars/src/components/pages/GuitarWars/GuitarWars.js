@@ -1,6 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
-import "./guitarWars.css"
+import "./GuitarWars.css"
 
 const GuitarWars = () => {
   const [getGtrPlayers, setGetGtrPlayers] = useState([])
