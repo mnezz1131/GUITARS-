@@ -10,8 +10,7 @@
 .columngtr{
   float: left;
   width: 50%;
-
-  margin-top: 100px;
+  margin-top: 0px;
 }
 
 /* Clear floats after the columns */

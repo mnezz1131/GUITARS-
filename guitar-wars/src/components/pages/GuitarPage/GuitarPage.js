@@ -13,9 +13,9 @@ console.log(id)
       <div className="columngtr">
       <h1>Guitarist Page</h1>
       <h3>Name:{gtrPlayer?.fields.names }</h3>
-       <h3>Rank:{gtrPlayer?.fields.rank }</h3>
-      <h3>Genre:{gtrPlayer?.fields.genre }</h3>
-          <h3>Bands:{gtrPlayer?.fields.bands}</h3>
+       <h4>Rank: {gtrPlayer?.fields.rank }</h4>
+      <h4>Genre: {gtrPlayer?.fields.genre }</h4>
+          <h4>Bands: {gtrPlayer?.fields.bands}</h4>
         </div>
         
         <div className="columngtr2">
