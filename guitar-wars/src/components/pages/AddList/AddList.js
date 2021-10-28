@@ -100,8 +100,8 @@ const handleSubmit = async (ev) => {
               {/* <p>{gtrPlayer?.fields?.solo}</p> */}
             </div>
           {/* <img src={gtrPlayer.fields.small} /> */}
-            <div className="column">
-              <h2>Best Song: {gtrPlayer?.fields.song}</h2></div>
+            {/* <div className="column">
+              <h2>Best Song: {gtrPlayer?.fields.song}</h2></div> */}
           <button className="buttonList" onClick={() => deleteGtr(gtrPlayer.id) }>Delete</button>
    
         </div>        

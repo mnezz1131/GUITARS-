@@ -34,9 +34,9 @@ const Home = ({ gtrPlayers }) => {
                 
                 <div className="gtrDiv" key={gtrPlayer.id}>
                 <Link to ={`/guitarist-page/${gtrPlayer.id}`}>
-                    <Typography gutterBottom variant="h6">  {gtrPlayer?.fields.names}</Typography></Link>
+                    <h4>  {gtrPlayer?.fields.names}</h4></Link>
                     <img alt={gtrPlayer?.fields.names} src={gtrPlayer?.fields.small} />
-                  <Typography gutterBottom variant="h5">Rank: {gtrPlayer?.fields.rank}</Typography>
+                  <h5>Rank: {gtrPlayer?.fields.rank}</h5>
                 </div>        
                 ))}
 
