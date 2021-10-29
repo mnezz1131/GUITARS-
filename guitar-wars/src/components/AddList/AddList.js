@@ -11,22 +11,16 @@ const AddList = () => {
 
   // setting use effect to make axios call and store data
   useEffect(() => {
-    // console.log("Getting data");
     const gtrData = async () => {
       const resp = await axios.get(
         "https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ"
       );
-      // console.log(resp.data.records)
-      // console.log(resp.data.records[0].id)
 
       const sortedList = resp.data.records.sort(
         (a, b) => a.fields.rank - b.fields.rank
       );
-      // const found = sortedList.find(element => element.id === id)
-      // console.log(found)
-      setGtrPlayers(sortedList);
 
-      // setGtrPlayers(resp.data.records)
+      setGtrPlayers(sortedList);
     };
     gtrData();
   }, [toggleFetch]);
@@ -40,7 +34,6 @@ const AddList = () => {
       rank,
       solo,
     };
-    // console.log(newGtr)
 
     await axios.post(
       "https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?key4oMm9k9ZdBAjAJ",
@@ -51,8 +44,6 @@ const AddList = () => {
   };
 
   const deleteGtr = async (playerId) => {
-    // console.log("deleting")
-    // console.log(playerId)
     await axios.delete(
       `https://api.airtable.com/v0/appsWUAfBQp2UDLAA/Table%201?api_key=key4oMm9k9ZdBAjAJ&records[]=${playerId}`
     );
@@ -99,15 +90,11 @@ const AddList = () => {
           </div>
           <div className="column">
             <h2>{gtrPlayer?.fields?.names}</h2>
-            {/* <p>{gtrPlayer?.fields?.names}</p> */}
           </div>
           <div className="column">
             <h2> Solo: {gtrPlayer?.fields?.solo}</h2>
-            {/* <p>{gtrPlayer?.fields?.solo}</p> */}
           </div>
-          {/* <img src={gtrPlayer.fields.small} /> */}
-          {/* <div className="column">
-              <h2>Best Song: {gtrPlayer?.fields.song}</h2></div> */}
+
           <button
             className="buttonList"
             onClick={() => deleteGtr(gtrPlayer.id)}

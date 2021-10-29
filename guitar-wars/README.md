@@ -48,3 +48,5 @@ SWOT
 Link to Deployed Site
 https://hardcore-poitras-b8d1b6.netlify.app/
 
+Link to GitHub
+https://github.com/mnezz1131/Guitar-Wars
